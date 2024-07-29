@@ -1,0 +1,44 @@
+@mixin Adjustment {
+    padding: 10px;
+
+    input {
+        width: 350px;
+        height: 25px;
+    }
+}
+
+.notif-form {
+    border: 1px solid grey;
+    border-radius: 15px;
+
+    .notif-form-head {
+        width: 100%;
+        background: grey;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .email {
+        @include Adjustment();
+    }
+
+    .flight {
+        @include Adjustment();
+    }
+
+    form {
+        button {
+            margin: 10px;
+        }
+    }
+    .message{
+        padding: 10px;
+        color: yellowgreen
+    }
+}
