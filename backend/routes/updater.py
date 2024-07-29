@@ -52,19 +52,19 @@ def update_data(flight_number):
                     receiver = user
 
                     departure_info = (
-                        f" <strong>Departure time is {data['dept']}.</strong>"
+                        f" <strong>New Departure time is {data['dept']}.</strong>"
                         if "dept" in data
                         else ""
                     )
                     arrival_info = (
-                        f"<strong>Arrival time is {data['arr']}.</strong>"
+                        f"<strong>New Arrival time is {data['arr']}.</strong>"
                         if "arr" in data
                         else ""
                     )
 
                     data = f"""
                     <p>Hi,</p>
-                    <p>Your flight <strong>{flight_number}</strong> is Rescheduled.{departure_info}. {arrival_info} We will notify you once boarding starts!</p>
+                    <p>Your flight <strong>{flight_number}</strong> is Rescheduled.{departure_info} {arrival_info} We will notify you once boarding starts!</p>
                     <p>Thanks</p>
                     """
                     send_mail(receiver, status, data)

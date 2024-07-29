@@ -1,0 +1,14 @@
+# Python cache
+backend/__pycache__/
+backend/routes/__pycache__/
+backend/routes/user/__pycache__/
+backend/routes/user/push/__pycache__/
+
+# Virtual environment
+backend/venv/
+
+# VS Code settings
+backend/.vscode/
+
+# Node modules
+front/node_modules/
