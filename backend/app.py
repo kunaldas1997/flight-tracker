@@ -12,7 +12,7 @@ CORS(app)
 socket = SocketIO(app, cors_allowed_origins="*")
 
 # DB Setup
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb://localhost:27017")
 db = client["flightdb"]
 collection = db["flightcollection"]
 usercollection = db["user"]
@@ -31,7 +31,7 @@ from routes.updater import update_data_route
 from routes.user.create_user import create_user
 from routes.user.get_user import get_user
 from routes.user.create_email_service import create_email_notif
-
+from routes.search import search
 # register
 app.register_blueprint(set_data_route)
 app.register_blueprint(get_data_route)
@@ -40,6 +40,7 @@ app.register_blueprint(update_data_route)
 app.register_blueprint(create_user)
 app.register_blueprint(get_user)
 app.register_blueprint(create_email_notif)
+app.register_blueprint(search)
 
 
 

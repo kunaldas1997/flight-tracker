@@ -12,7 +12,7 @@ mail_gun_key = ""
 # mail_gun_domain = ""
 
 MAILGUN_API_URL = ""
-FROM_EMAIL_ADDRESS = ""
+FROM_EMAIL_ADDRESS = "kunaldas1107@gmail.com"
 
 
 def send_mail(receiver, status, data):

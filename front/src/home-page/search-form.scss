@@ -1,0 +1,22 @@
+.panel{
+    margin-top: 10px;
+    width: 350px;
+    height:  60px;
+    border: white;
+    z-index: 1000;
+    position: relative;
+    .search{
+        width: auto;
+    }
+    .panelChild{
+        padding: 10px;
+        text-align: left;
+        border: 1px solid white;
+        border-radius: 15px;
+        margin: 5px;
+        p{
+            font-size: 16px;
+    
+        }
+    }
+}

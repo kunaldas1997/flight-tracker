@@ -38,7 +38,7 @@
     }
   }
 
-  #setnotif {
+  #setnotif{
     display: flex;
     padding: 3rem 1rem;
     flex-direction: column;
@@ -47,6 +47,18 @@
     top: 120px;
     right: 120px;
     z-index: 1000;
+  }
+
+  #search {
+    display: flex;
+    padding: 3rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 390px;
+    right: 120px;
+    z-index: 1000;
+    width: 350px;
   }
 }
 
